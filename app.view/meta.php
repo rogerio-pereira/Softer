@@ -4,8 +4,8 @@
 ?>
 <title><?php echo $configuracoes->titulo; ?></title>
 
-<link rel="icon"                    href="../app.view/img/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon"           href="../app.view/img/favicon.ico" type="image/x-icon" />
+<link rel="icon"                    href="/app.view/img/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon"           href="/app.view/img/favicon.ico" type="image/x-icon" />
 
 <meta name="description"            content="<?php echo $configuracoes->descricao; ?>" />
 <meta name="keywords"               content="<?php echo $configuracoes->keywords; ?>"/>
