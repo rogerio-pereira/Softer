@@ -1,12 +1,4 @@
-/*
- *	Arquivo  login.js
- *	Javascript do arquivo login.class.php
- *	
- *	Sistema:	Doce___Bacana_Lingerie
- *	Autor:      Rogério Eduardo Pereira
- *	Data:       27/01/2015
- */
- function validaLogin()
+function validaLogin()
  {
  	if($('#email').val() == null)
  		return false;

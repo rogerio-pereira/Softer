@@ -1,31 +1,31 @@
 <?php
     /**
-      * controladorConfiguracoes.php
-      * Classe de Controle controladorConfiguracoes
+      * sistemas.php
+      * Classe sistemas
       *
       * @author  Rogério Eduardo Pereira <rogerio@rogeriopereira.info>
       * @version 1.0
       * @access  public
       */
-    class controladorConfiguracoes
+    class sistemas
     {
         /*
-         *    Variaveis
+         * Variaveis
          */
-        private $configuracao;
+
 
         /*
          * Métodos
          */
         /**
-         * Método Construtor
-         *
-         * @access private
-         * @return void
-         */
+          * Método Construtor
+          *
+          * @access private
+          * @return void
+          */
         public function __construct()
         {
-            $this->configuracao = NULL;
+
         }
 
         /**
@@ -56,22 +56,17 @@
         }
 
         /**
-         * Método getConfiguracoes
-         * Retorna as configura?es do banco de dados
-         * 
-         * @access public
-         * @return tbConfiguracoes   Configura?es do site
-         */
-        public function getConfiguracoes()
+          * Método show
+          * Exibe as informações na tela
+          *
+          * @access public
+          * @return void
+          */
+        public function show()
         {
-            $this->configuracao = NULL;
-            
-            //RECUPERA CONEXAO BANCO DE DADOS
-            TTransaction::open('my_bd_site');
-
-            $this->configuracao = (new tbConfiguracoes())->load(1);
-
-            return $this->configuracao;
+            ?>
+                Sistemas
+            <?php
         }
     }
 ?>

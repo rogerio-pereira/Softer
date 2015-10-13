@@ -4,7 +4,7 @@
       * template.php
       * Classe template
       *
-      * @author  RogÈrio Eduardo Pereira <rogerio@rogeriopereira.info>
+      * @author  Rog√©rio Eduardo Pereira <rogerio@rogeriopereira.info>
       * @version 1.0
       * @access  public
       */
@@ -16,7 +16,7 @@
 
 
         /**
-         * MÈtodo construtor
+         * M√©todo construtor
          * Verifica se esta logado
          * 
          * @access public
@@ -29,8 +29,8 @@
 
 
         /**
-         * MÈtodo show
-         * Exibe as informaÁıes da p·gina
+         * M√©todo show
+         * Exibe as informa√ß√µes da p√°gina
          * 
          * @access public
          * @return void
@@ -52,14 +52,94 @@
                     <!--JavaScript-->
                 </head>
                 <body>
-                        #CONTENT#
+                    <header>
+                        <div class='row'>
+                            <div class='12u menuBar'>
+                                <i class="fa fa-bars fa-2x right" style='color: #FF8400;' onclick="$('#menuSuperior').toggle('slow')"></i>
+                            </div>
+                            <div class='12u'>
+                                <nav id='menuSuperior'>
+                                    <hr class='noSpace' style='height: 3px;'>
+                                    <ul>
+                                        <li>
+                                            <a href='#Home' title='Home' alt='Home' onclick="scrollToAnchor('home')">
+                                                Home
+                                            </a>
+                                        </li><li>
+                                            <a href='#Web' title='Web' alt='Web' onclick="scrollToAnchor('web')">
+                                                Web
+                                            </a>
+                                        </li><li>
+                                            <a href='#Sistemas' title='Sistemas' alt='Sistemas' onclick="scrollToAnchor('sistemas')">
+                                                Sistemas
+                                            </a>
+                                        </li><li>
+                                            <a href='#Portifolio' title='Portif√≥lio ' alt='Portif√≥lio' onclick="scrollToAnchor('portifolio')">
+                                                Portif√≥lio
+                                            </a>
+                                        </li><li>
+                                            <a href='#Contato' title='Contato' alt='Contato' onclick="scrollToAnchor('contato')">
+                                                Contato
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <hr class='noSpace' style='height: 3px;'>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+
+                    <section>
+                        <div class='row content'>
+                            <div class='12u home'>
+                                <a name='Home'></a>
+                                <?php (new home())->show(); ?>
+                            </div>
+                            <div class="clear"></div>
+                
+
+                            <div class='12u web'>
+                                <a name='Web'></a>
+                                <?php (new web())->show(); ?>
+                            </div>
+                            <div class="clear"></div>
+
+                            <div class='12u sistemas'>
+                                <a name='Sistemas'></a>
+                                <?php (new sistemas())->show(); ?>
+                            </div>
+                            <div class="clear"></div>
+
+                            <div class='12u portifolio'>
+                                <a name='Portifolio'></a>
+                                <?php (new portifolio())->show(); ?>
+                            </div>
+                            <div class="clear"></div>
+
+                            <div class='12u contato'>
+                                <a name='Contato'></a>
+                                <?php (new contato())->show(); ?>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </section>
+
+                    <footer>
+                        <div class='row'>
+                           <div class='12u copyright center'>
+                                <?= '&copy; Copyright 2015 - '.$_SESSION['configuracoes']->empresa.'<br/>' ?>
+
+                                Desenvolvivo por: 
+                                <a href='http://www.softer.com.br' alt='Softer' title='Softer' target="_blank">
+                                    Softer
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
                 </body>
             </html>
-
-            <script>
-                skel.init();
-            </script>
         <?php
+        include_once 'js/jsInit.php';
         }
     }
 ?>
