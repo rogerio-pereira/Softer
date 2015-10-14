@@ -12,6 +12,7 @@
         /*
          * Variaveis
          */
+        private $conteudo;
 
 
         /*
@@ -25,7 +26,7 @@
           */
         public function __construct()
         {
-
+            $this->conteudo = (new tbPaginas())->load(2);
         }
 
         /**
@@ -65,7 +66,15 @@
         public function show()
         {
             ?>
-                Sistemas
+                <div class='row'>
+                    <div class='10u -1u'>
+                        <h1 class='center' alt='<?= $this->conteudo->titulo ?>' title='<?= $this->conteudo->titulo ?>'>
+                            <?= $this->conteudo->titulo ?>
+                        </h1>
+                        
+                        <?= $this->conteudo->texto ?>
+                    </div>
+                </div>
             <?php
         }
     }

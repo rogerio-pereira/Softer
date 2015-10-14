@@ -155,8 +155,8 @@
                                 data-show-posts="false"
                             >
                                 <div class="fb-xfbml-parse-ignore">
-                                    <blockquote cite="https://www.facebook.com/groupsofter">
-                                        <a href="https://www.facebook.com/groupsofter">
+                                    <blockquote cite="<?= $_SESSION['configuracoes']->facebook ?>">
+                                        <a href="https://www.facebook.com/groupsofter" alt='Softer' title='Softer'>
                                             Softer
                                         </a>
                                     </blockquote>

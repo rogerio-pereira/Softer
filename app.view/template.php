@@ -55,7 +55,11 @@
                     <header>
                         <div class='row'>
                             <div class='12u menuBar'>
-                                <i class="fa fa-bars fa-2x right" style='color: #FF8400;' onclick="$('#menuSuperior').toggle('slow')"></i>
+                                <i 
+                                    class="fa fa-bars fa-2x right menuBarIcon" 
+                                    style='' 
+                                    onclick="$('#menuSuperior').toggle('slow')"
+                                ></i>
                             </div>
                             <div class='12u'>
                                 <nav id='menuSuperior'>

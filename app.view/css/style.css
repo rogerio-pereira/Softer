@@ -87,8 +87,15 @@ header
 .menuBar
 {
     position:   fixed;
-    z-index:    2;
+    z-index:    1;
     top:        13px;
+}
+
+.menuBarIcon
+{
+    position:   relative;
+    z-index:    2;
+    color: #FF8400;
 }
 
 #menuSuperior
@@ -164,21 +171,27 @@ section
 
 .web
 {
+    background-color:   #FF8400;
+    color:              black;
 }
 
 .sistemas
 {
+    background-color:   #ab5e24;
+    color:              black;
 }
 
 .portifolio
 {
+    background-color: #633d43;
+    
 }
 
 .contato
 {
     padding-left:       100px;
     padding-right:      100px;
-    background-color:   #08136A;
+    background-color:   #2a225c;
 
     color:              white;
 }
@@ -196,7 +209,7 @@ section
 
 footer
 {
-    background-color:   #FF8400;
+    background-color:   #08136A;
 }
 
 footer h1
