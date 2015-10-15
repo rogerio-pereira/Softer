@@ -12,6 +12,8 @@
         /*
          * Variaveis
          */
+        private $conteudo;
+        private $gallery;
 
 
         /*
@@ -25,7 +27,8 @@
           */
         public function __construct()
         {
-
+            $this->conteudo = (new tbPaginas())->load(3);
+            $this->gallery  = (new controladorGaleria())->getGaleria('Pagina',3);
         }
 
         /**
@@ -65,7 +68,34 @@
         public function show()
         {
             ?>
-                Portifóliio
+                <h1 class='center' alt='<?= $this->conteudo->titulo ?>' title='<?= $this->conteudo->titulo ?>'>
+                    <?= $this->conteudo->titulo ?>
+                </h1>
+                <?= $this->conteudo->texto; ?>
+                
+                <div class='row'>
+                    <?php 
+                        foreach ($this->gallery as $galeria) 
+                        {
+                            echo 
+                                "
+                                    <div class='4u'>
+                                        <figure class='portifolioFigure'>
+                                            <img 
+                                                src='{$galeria->imagem}' 
+                                                alt='{$galeria->titulo}' 
+                                                title='{$galeria->titulo}'
+                                            >
+                                            <figcaption>
+                                                <h2 class='center'>{$galeria->titulo}</h2>
+                                                {$galeria->descricao}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                ";
+                        }
+                    ?>
+                </div>
             <?php
         }
     }

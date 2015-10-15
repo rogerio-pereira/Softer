@@ -168,8 +168,8 @@
         <div>
             <span class='center'>
                 &copy; 2015 - 
-                <a href='http://rogeriopereira.info' alt='Desenvolvedor' title='Desenvolvedor' target='_blank'>
-                    Rogério Pereira
+                <a href='http://groupsofter.com.br' alt='Desenvolvedor' title='Desenvolvedor' target='_blank'>
+                    Softer
                 </a>
             </span>
         </div>

@@ -1,6 +1,9 @@
 <?php
-    $controladorConfiguracoes   = new controladorConfiguracoes();
-     $_SESSION['configuracoes'] = $controladorConfiguracoes->getConfiguracoes();
+    if(!isset($_SESSION['configuracoes']))
+    {
+        $controladorConfiguracoes   = new controladorConfiguracoes();
+        $_SESSION['configuracoes'] = $controladorConfiguracoes->getConfiguracoes();
+    }
 ?>
 <title><?php echo  $_SESSION['configuracoes']->titulo; ?></title>
 
@@ -11,7 +14,7 @@
 <meta name="keywords"               content="<?php echo  $_SESSION['configuracoes']->keywords; ?>"/>
 <meta name="title"                  content="<?php echo  $_SESSION['configuracoes']->titulo; ?>"/> 
 <meta name="url"                    content="<?php echo  $_SESSION['configuracoes']->dominio; ?>"/> 
-<meta http-equiv="VW96.OBJECT TYPE"	content="<?php echo  $_SESSION['configuracoes']->keyword; ?>"/> 
+<meta http-equiv="VW96.OBJECT TYPE"	content="<?php echo  $_SESSION['configuracoes']->keywords; ?>"/> 
 <meta property="og:title"           content="<?php echo  $_SESSION['configuracoes']->descricao.' - '. $_SESSION['configuracoes']->empresa; ?>" />
 <meta property="og:description"     content="<?php echo  $_SESSION['configuracoes']->descricao.' - '. $_SESSION['configuracoes']->conteudo.' - '. $_SESSION['configuracoes']->empresa; ?>" />
 <meta property="og:image"           content="<?php echo  $_SESSION['configuracoes']->logotipo; ?>" />

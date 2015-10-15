@@ -87,15 +87,15 @@ header
 .menuBar
 {
     position:   fixed;
-    z-index:    1;
+    z-index:    3;
     top:        13px;
 }
 
 .menuBarIcon
 {
     position:   relative;
-    z-index:    2;
-    color: #FF8400;
+    z-index:    4;
+    color:      #ffb566;
 }
 
 #menuSuperior
@@ -183,8 +183,77 @@ section
 
 .portifolio
 {
-    background-color: #633d43;
-    
+    background-color:   #633d43;
+    padding-bottom:     60px;    
+}
+
+.portifolioFigure
+{
+    position:           relative;
+
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition:    all .3s ease-in-out;
+    -ms-transition:     all .3s ease-in-out;
+    -o-transition:      all .3s ease-in-out;
+    transition:         all .3s ease-in-out;
+}
+
+.portifolioFigure:hover
+{
+    -webkit-transform:  scale(1.2);
+}
+
+.portifolioFigure img
+{
+    position:   relative;
+    width:      100%;
+    height:     100%;
+    z-index:    1;
+}
+
+.portifolioFigure figcaption
+{
+    position:           absolute;
+    top:                0px;
+    left:               0px;
+    padding:            10px;
+    width:              100%;
+    height:             100%;
+
+    background-color:   rgba(0,0,0,.8);
+    z-index:            2;
+
+    color:              white;
+    font-size:          .7em;
+
+    opacity:            0;
+
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition:    all .3s ease-in-out;
+    -ms-transition:     all .3s ease-in-out;
+    -o-transition:      all .3s ease-in-out;
+    transition:         all .3s ease-in-out;
+}
+
+.portifolioFigure figcaption:hover
+{
+    opacity: 1;
+}
+
+.portifolioFigure figcaption h2
+{
+    font-size:      1.2em;
+    font-weight:    bold;
+    text-decoration: underline;
+
+    margin-top:     0px;
+    margin-bottom:  5px;
+    padding:        0px;
+}
+
+.portifolioFigure figcaption ul
+{
+    margin: 0px;
 }
 
 .contato
@@ -210,38 +279,12 @@ section
 footer
 {
     background-color:   #08136A;
+    color: white;
 }
 
-footer h1
+.copyright a
 {
-    text-decoration:    underline;
-    font-weight:        bold;
-
-    width:              100%;
-    margin-left:        auto;
-    margin-right:       auto;
-    margin-bottom:      7px;
-    text-align:         center;
-    display:            block;
-    font-size:          1em;
-}
-
-footer nav#menuInferior ul
-{
-    margin: 0px;
-}
-
-footer nav#menuInferior ul li
-{
-    list-style: none;
-    margin:     0px;
-    padding     0px;
-}
-
-footer nav#menuInferior ul li a
-{
-    font-weight:    normal;
-    color:          black;
+    color: #FF8400;
 }
 
 .google-maps 
