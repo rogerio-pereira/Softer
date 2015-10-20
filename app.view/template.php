@@ -55,40 +55,38 @@
                     <header>
                         <div class='row'>
                             <div class='12u menuBar'>
-                                <i 
-                                    class="fa fa-bars fa-2x right menuBarIcon" 
-                                    style='' 
-                                    onclick="$('#menuSuperior').toggle('slow')"
-                                ></i>
-                            </div>
-                            <div class='12u'>
                                 <nav id='menuSuperior'>
                                     <hr class='noSpace' style='height: 3px;'>
                                     <ul>
                                         <li>
-                                            <a href='#Home' title='Home' alt='Home' onclick="scrollToAnchor('home')">
+                                            <a href='#Home' title='Home' alt='Home' onclick="scrollToAnchor('Home')">
                                                 Home
                                             </a>
                                         </li><li>
-                                            <a href='#Web' title='Web' alt='Web' onclick="scrollToAnchor('web')">
+                                            <a href='#Web' title='Web' alt='Web' onclick="scrollToAnchor('Web')">
                                                 Web
                                             </a>
                                         </li><li>
-                                            <a href='#Sistemas' title='Sistemas' alt='Sistemas' onclick="scrollToAnchor('sistemas')">
+                                            <a href='#Sistemas' title='Sistemas' alt='Sistemas' onclick="scrollToAnchor('Sistemas')">
                                                 Sistemas
                                             </a>
                                         </li><li>
-                                            <a href='#Portifolio' title='Portifólio ' alt='Portifólio' onclick="scrollToAnchor('portifolio')">
+                                            <a href='#Portifolio' title='Portifólio ' alt='Portifólio' onclick="scrollToAnchor('Portifolio')">
                                                 Portifólio
                                             </a>
                                         </li><li>
-                                            <a href='#Contato' title='Contato' alt='Contato' onclick="scrollToAnchor('contato')">
+                                            <a href='#Contato' title='Contato' alt='Contato' onclick="scrollToAnchor('Contato')">
                                                 Contato
                                             </a>
                                         </li>
                                     </ul>
                                     <hr class='noSpace' style='height: 3px;'>
                                 </nav>
+
+                                <i 
+                                    class="fa fa-bars fa-2x right menuBarIcon" 
+                                    onclick="$('#menuSuperior').show('slow')"
+                                ></i>
                             </div>
                         </div>
                     </header>

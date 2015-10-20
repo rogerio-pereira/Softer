@@ -10,8 +10,8 @@
       */
 	class home
 	{
-		/*
-		 * Vari?eis
+		/*		
+		 * Variáeis
 		 */
 
 
@@ -30,7 +30,7 @@
 
 		/**
 		 * Método show
-		 * Exibe as informa?es da p?ina
+		 * Exibe as informações da página
 		 * 
 		 * @access public
 		 */
