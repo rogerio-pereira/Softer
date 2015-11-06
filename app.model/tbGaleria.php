@@ -58,6 +58,11 @@
         protected $descricao;
         /**
           * @access protected
+          * @var    string      URL
+          */
+        protected $url;
+        /**
+          * @access protected
           * @var    int         Ordem
           */
         protected $ordem;

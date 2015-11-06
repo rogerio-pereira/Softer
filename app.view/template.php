@@ -63,11 +63,11 @@
                                                 Home
                                             </a>
                                         </li><li>
-                                            <a href='#Web' title='Web' alt='Web' onclick="scrollToAnchor('Web')">
+                                            <a href='web' title='Web' alt='Web' onclick="scrollToAnchor('Web')">
                                                 Web
                                             </a>
                                         </li><li>
-                                            <a href='#Sistemas' title='Sistemas' alt='Sistemas' onclick="scrollToAnchor('Sistemas')">
+                                            <a href='sistemas' title='Sistemas' alt='Sistemas' onclick="scrollToAnchor('Sistemas')">
                                                 Sistemas
                                             </a>
                                         </li><li>

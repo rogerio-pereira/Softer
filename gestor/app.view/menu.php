@@ -63,6 +63,19 @@
                     <?php
                 }
             ?>
+             <?php
+                if($_SESSION['funcoes']->portifolio == 1)
+                {
+                    ?>
+                        <li>
+                            <a href='/portifolio' title='Portifólio' alt='Portifólio'>
+                                <i class="fa fa-clone"></i>&nbsp;                                
+                                Portifólio
+                            </a>
+                        </li>
+                    <?php
+                }
+            ?>
             <?php
                 if($_SESSION['funcoes']->ecommerce == 1)
                 {
@@ -127,7 +140,7 @@
                 }
             ?>
             <?php
-                if  (
+                /*if  (
                         ($_SESSION['funcoes']->galeria      == 1)   ||
                         ($_SESSION['funcoes']->ecommerce    == 1)   ||
                         ($_SESSION['funcoes']->imobiliaria  == 1)
@@ -141,7 +154,7 @@
                         </a>
                     </li>
                     <?php
-                }
+                }*/
             ?>
             <li>
                 <a href='/usuarios' title='Usuários' alt='Usuários'>
@@ -168,8 +181,8 @@
         <div>
             <span class='center'>
                 &copy; 2015 - 
-                <a href='http://rogeriopereira.info' alt='Desenvolvedor' title='Desenvolvedor' target='_blank'>
-                    Rogério Pereira
+                <a href='http://www.groupsofter.com.br' alt='Softer' title='Softer' target='_blank'>
+                    Softer
                 </a>
             </span>
         </div>
