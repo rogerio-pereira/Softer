@@ -1,12 +1,15 @@
 <script>
-    skel.init();
-
-    $('#menuSuperior').hide();
-
-    function scrollToAnchor(aid)
+    skel.breakpoints({
+        xlarge: "(max-width: 1680px)",
+        large:  "(max-width: 1280px)",
+        medium: "(max-width: 780px)",
+        small:  "(max-width: 650px)",
+        xsmall: "(max-width: 480px)"
+    });
+    skel.layout(
     {
-        var aTag = $("a[name='"+ aid +"']");
-        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-        $('#menuSuperior').hide();
-    }
+        reset:          "full",
+        conditionals:   true,
+        grid:           true,
+    });
 </script>
