@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 06, 2015 at 05:01 PM
+-- Generation Time: Nov 06, 2015 at 05:24 PM
 -- Server version: 5.6.27-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.14
 
@@ -254,12 +254,12 @@ CREATE TABLE IF NOT EXISTS `portifolio` (
   `codigo` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `imagem` varchar(100) NOT NULL,
   `titulo` varchar(50) NOT NULL,
-  `descricao` varchar(100) NOT NULL,
-  `url` varchar(100) NOT NULL,
+  `descricao` longtext NOT NULL,
+  `url` varchar(100) DEFAULT NULL,
   `ativo` tinyint(1) NOT NULL DEFAULT '1',
   `excluido` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`codigo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 

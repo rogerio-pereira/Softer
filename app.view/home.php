@@ -8,10 +8,10 @@
       * @version 1.0
       * @access  public
       */
-	class home
+	class Home
 	{
-		/*		
-		 * Variáeis
+		/*
+		 * Vari?eis
 		 */
 
 
@@ -30,14 +30,14 @@
 
 		/**
 		 * Método show
-		 * Exibe as informações da página
+		 * Exibe as informa?es da p?ina
 		 * 
 		 * @access public
 		 */
 		public function show()
 		{
-			?>      
-				<img src='/app.view/img/logotipo.png'>
+			?>
+				HOME
 			<?php
 		}
 	}

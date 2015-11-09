@@ -1,20 +1,20 @@
 function validaLogin()
- {
- 	if($('#email').val() == null)
- 		return false;
- 	else
- 	{
- 		email = $('#email').val()
+{
+	if($('#email').val() == null)
+		return false;
+	else
+	{
+		email = $('#email').val()
 
- 		var filtro = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-        if(!filtro.test(email))
-        	return false;
- 	}
- 	if($('#senha').val() == null)
- 		return false;
+		var filtro = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    if(!filtro.test(email))
+    	return false;
+	}
+	if($('#senha').val() == null)
+		return false;
 
- 	executaLogin();
- }
+	executaLogin();
+}
 
 function executaLogin()
 {

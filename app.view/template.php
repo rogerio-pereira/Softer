@@ -30,7 +30,7 @@
 
         /**
          * Método show
-         * Exibe as informações da página
+         * Exibe as informa?es da p?ina
          * 
          * @access public
          * @return void
@@ -52,96 +52,26 @@
                     <!--JavaScript-->
                 </head>
                 <body>
-                    <header>
-                        <div class='row'>
-                            <div class='12u menuBar'>
-                                <nav id='menuSuperior'>
-                                    <hr class='noSpace' style='height: 3px;'>
-                                    <ul>
-                                        <li>
-                                            <a href='#Home' title='Home' alt='Home' onclick="scrollToAnchor('Home')">
-                                                Home
-                                            </a>
-                                        </li><li>
-                                            <a href='web' title='Web' alt='Web' onclick="scrollToAnchor('Web')">
-                                                Web
-                                            </a>
-                                        </li><li>
-                                            <a href='sistemas' title='Sistemas' alt='Sistemas' onclick="scrollToAnchor('Sistemas')">
-                                                Sistemas
-                                            </a>
-                                        </li><li>
-                                            <a href='#Portifolio' title='Portifólio ' alt='Portifólio' onclick="scrollToAnchor('Portifolio')">
-                                                Portifólio
-                                            </a>
-                                        </li><li>
-                                            <a href='#Contato' title='Contato' alt='Contato' onclick="scrollToAnchor('Contato')">
-                                                Contato
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <hr class='noSpace' style='height: 3px;'>
-                                </nav>
-
-                                <i 
-                                    class="fa fa-bars fa-2x right menuBarIcon" 
-                                    onclick="$('#menuSuperior').show('slow')"
-                                ></i>
-                            </div>
-                        </div>
-                    </header>
-
-                    <section>
-                        <div class='row content'>
-                            <div class='12u home'>
-                                <a name='Home'></a>
-                                <?php (new home())->show(); ?>
-                            </div>
-                            <div class="clear"></div>
-                
-
-                            <div class='12u web'>
-                                <a name='Web'></a>
-                                <?php (new web())->show(); ?>
-                            </div>
-                            <div class="clear"></div>
-
-                            <div class='12u sistemas'>
-                                <a name='Sistemas'></a>
-                                <?php (new sistemas())->show(); ?>
-                            </div>
-                            <div class="clear"></div>
-
-                            <div class='12u portifolio'>
-                                <a name='Portifolio'></a>
-                                <?php (new portifolio())->show(); ?>
-                            </div>
-                            <div class="clear"></div>
-
-                            <div class='12u contato'>
-                                <a name='Contato'></a>
-                                <?php (new contato())->show(); ?>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </section>
-
-                    <footer>
-                        <div class='row'>
-                           <div class='12u copyright center'>
-                                <?= '&copy; Copyright 2015 - '.$_SESSION['configuracoes']->empresa.'<br/>' ?>
-
-                                Desenvolvivo por: 
-                                <a href='http://www.softer.com.br' alt='Softer' title='Softer' target="_blank">
-                                    Softer
-                                </a>
-                            </div>
-                        </div>
-                    </footer>
+                        #CONTENT#
                 </body>
             </html>
+
+            <script>
+                skel.breakpoints({
+                        xlarge: "(max-width: 1680px)",
+                        large:  "(max-width: 1280px)",
+                        medium: "(max-width: 780px)",
+                        small:  "(max-width: 650px)",
+                        xsmall: "(max-width: 480px)"
+                    });
+                skel.layout(
+                    {
+                        reset:          "full",
+                        conditionals:   true,
+                        grid:           true,
+                    });
+            </script>
         <?php
-        include_once 'js/jsInit.php';
         }
     }
 ?>
