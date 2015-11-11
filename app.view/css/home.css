@@ -1,0 +1,25 @@
+.imgHomeLink
+{
+    color:      white;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.imgHomeLink:hover
+{
+    text-decoration: underline;
+}
+
+figure.imgHome img
+{
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.imgHome figcaption
+{
+    margin-top:     20px;
+    font-weight:    400;
+}

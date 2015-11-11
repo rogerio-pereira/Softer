@@ -47,12 +47,95 @@
                     <?php include_once 'css/css.php'; ?>    
                     
                     <!--JQuery-->
-                    <?php include_once 'js/jsLib.php'; ?>              
+                    <?php include_once 'js/jsLib.php'; ?>             
                     
                     <!--JavaScript-->
                 </head>
                 <body>
-                    #CONTENT#
+                    <div class='cover'>
+                        <header>
+                            <div class='12u center'>
+                                <img src="<?= $_SESSION['configuracoes']->logotipo ?>" id='logotipoTop'>
+                            </div>
+
+                            <div class="12u">
+                                <nav id='menuSuperior'>
+                                    <ul>
+                                        <!--Home-->
+                                        <li>
+                                            <a href='/' alt='Home' title='Home'>
+                                                Home        
+                                            </a>
+                                        </li>
+                                        
+                                        <!--Web-->
+                                        <li>
+                                            <a 
+                                                href='/paginas/<?= (new controladorUrl())->urlAmigavel('Desenvolvimento Web') ?>'
+                                                alt='Desenvolvimento Web'
+                                                title='Desenvolvimento Web'
+                                            >
+                                                Web
+                                            </a>
+                                        </li>
+
+                                        <!--Sistemas-->
+                                        <li>
+                                            <a 
+                                                href='/paginas/<?= (new controladorUrl())->urlAmigavel('Desenvolvimento de Sistemas') ?>'
+                                                alt='Desenvolvimento de Sistemas'
+                                                title='Desenvolvimento de Sistemas'
+                                            >
+                                                Sistemas
+                                            </a>
+                                        </li>
+
+                                        <!--Portifólio-->
+                                        <li>
+                                            <a href='/portifolio' alt='Portifólio' title='Portifólio'> 
+                                                Portifólio  
+                                            </a>
+                                        </li>
+
+                                        <!--Manutenção-->
+                                        <li>
+                                            <a 
+                                                href='/paginas/<?= (new controladorUrl())->urlAmigavel('Assistência Técnica') ?>'
+                                                alt='Assistência Técnica'
+                                                title='Assistência Técnica'
+                                            > 
+                                                Manutenção  
+                                            </a>
+                                        </li>
+
+                                        <!--Contato-->
+                                        <li>
+                                            <a href='/contato' alt='Contato' title='Contato'>
+                                                Contato
+                                             </a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </header>
+
+                        <div class='10u -1u'>
+                            <section>
+                                #CONTENT#
+                            </section>
+                        </div>
+
+                        <div class="12u">
+                            <footer>
+                                &copy; Copyright 2015 - <?= $_SESSION['configuracoes']->empresa?>
+                                <br/>
+                                <a href='http://www.groupsofter.com.br' target='_blank' alt='Softer' title='Softer'>
+                                    <strong>Softer</strong>
+                                </a>
+                            </footer>
+                        </div>
+                    </div>
                 </body>
             </html>
 

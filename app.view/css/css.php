@@ -7,3 +7,6 @@
 <!--CSS-->
 <link rel="stylesheet" href="/app.view/css/style.css">
 <link rel="stylesheet" href="/app.view/css/formulario.css">
+<link rel="stylesheet" href="/app.view/css/home.css">
+<link rel="stylesheet" href="/app.view/css/contato.css">
+<link rel="stylesheet" href="/app.view/css/portifolio.css">

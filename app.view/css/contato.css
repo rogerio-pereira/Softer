@@ -1,0 +1,19 @@
+.emailsList
+{
+    list-style: disc;
+}
+
+.emailsList li
+{
+    display: block;
+}
+
+.emailsList li a
+{
+    color: #ff8400;
+}
+
+.emailsList li a:hover
+{
+    color: #03789b;
+}
