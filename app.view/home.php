@@ -38,7 +38,6 @@
 		{
 			?>
 				<!--Slider-->
-				<img src='/app.view/img/template/modeloBanner.png' style='max-width:100%;'>
 
 				<br/><br/>
 				<div class='row'>
