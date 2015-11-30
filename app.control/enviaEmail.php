@@ -206,8 +206,8 @@
             }
 
         }
-		
-		/**
+    
+        /**
          * Método send2
          * Envia o email pela função mail
          * 
