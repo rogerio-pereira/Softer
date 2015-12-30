@@ -10,3 +10,4 @@
 <link rel="stylesheet" href="/app.view/css/home.css">
 <link rel="stylesheet" href="/app.view/css/contato.css">
 <link rel="stylesheet" href="/app.view/css/portifolio.css">
+<link rel="stylesheet" href="/app.view/css/responsividade.css">

@@ -68,12 +68,15 @@
             ?>
                 <h1 class='center' alt='Portifólio' title='Portifólio'>Portifólio</h1><br/>
 
-                <div class='row'>
+                <div class='row center'>
                     <?php
+                        $cont = 1;
+
                         foreach ($this->collectionPortifolio as $portifolio) 
                         {
+                            $corta = ($cont % 2) == 0 ? '$' : '';
                             ?>
-                                <div class='4u'>
+                                <div class='4u 6u<?=$corta?>(medium) 12u(small) portifolioContainer'>
                                     <a 
                                         href='<?= $portifolio->url ?>' 
                                         alt='<?= $portifolio->titulo ?>' 
@@ -93,6 +96,8 @@
                                     </a>
                                 </div>
                             <?php
+
+                            $cont++;
                         }
                     ?>
                 </div>

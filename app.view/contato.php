@@ -68,7 +68,11 @@
                 <h1 class='center underline' alt='contato' title='contato'>Contato</h1><br/>
 
                 <div class='row'>
-                    <div class='4u -1u'>
+                    <div class='4u -1u 6u(medium) 8u(small) -2u(small) 12u(xsmall)'>
+                        <div class='only-small'>
+                            <h2 alt='Fale Conosco' title='Fale Conosco'>Fale Conosco</h2>
+                        </div>
+
                         <form id="contatoForm" name='contatoForm' class='center' action="/app.control/enviaEmail.php" method="post">
                             <input 
                                 type='text' 
@@ -128,7 +132,7 @@
                         </form>
                     </div>
 
-                    <div class='6u -1u'>
+                    <div class='6u -1u 6u(medium) 12u(small) important(small)'>
                         <div id="fb-root"></div>
                         <script>
                             (function(d, s, id) 
@@ -154,7 +158,7 @@
                             <div class="fb-xfbml-parse-ignore">
                                 <blockquote cite="https://www.facebook.com/groupsofter">
                                     <a href="https://www.facebook.com/groupsofter">
-                                        Softer
+                                        Softer Facebook
                                     </a>
                                 </blockquote>
                             </div>
@@ -190,7 +194,25 @@
                             </tr>
                             <tr>
                                 <td>Telefone: &nbsp;</td>
-                                <td><strong><?= $_SESSION['configuracoes']->telefone ?></strong></td>
+                                <td><strong><?php 
+                                                $tel = $_SESSION['configuracoes']->telefone;
+                                                $tel = str_replace('(', '', $tel);
+                                                $tel = str_replace(')', '', $tel);
+                                                $tel = str_replace('-', '', $tel);
+                                                $tel = str_replace(' ', '', $tel);
+
+                                                echo 
+                                                    "
+                                                        <a 
+                                                            href='tel:{$tel}' 
+                                                            class='telLink'
+                                                            alt='Telefone' 
+                                                            title='Telefone'
+                                                        >
+                                                            {$_SESSION['configuracoes']->telefone}
+                                                        </a>
+                                                    ";
+                                            ?></strong></td>
                             </tr>
                         </table>
                         <br/>
@@ -198,7 +220,7 @@
                         <h2 class='center'>E-mails:</h2>
 
                         <div class='row'>
-                            <div class='4u'>
+                            <div class='4u 6u(medium) 4u(small) 6u(xsmall)'>
                                 <h3 class='underline'>Setores</h3>
                                 <ul class='emailsList'>
                                     <li>
@@ -210,7 +232,7 @@
                                 </ul>
                             </div>
 
-                            <div class='4u'>  
+                            <div class='4u 6u(medium) 4u(small) 6u(xsmall)'>  
                                 <h3 class='underline'>Funcionários</h3>
                                 <ul class='emailsList'>
                                     <li>
@@ -222,7 +244,7 @@
                                 </ul>
                             </div>
 
-                            <div class='4u'>  
+                            <div class='4u 6u(medium) 4u(small) 6u(xsmall)'>  
                                 <h3 class='underline'>Serviços</h3>
                                 <ul class='emailsList'>
                                     <li>

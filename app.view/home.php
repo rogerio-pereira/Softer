@@ -41,7 +41,7 @@
 
 				<br/><br/>
 				<div class='row'>
-					<div class='4u' class='center'>
+					<div class='4u 12u(small)' class='center'>
 						<a 
 						 	href='/paginas/<?= (new controladorUrl())->urlAmigavel('Desenvolvimento de Sistemas') ?>'
                             alt='Desenvolvimento de Sistemas'
@@ -61,7 +61,7 @@
 						</a>
 					</div>
 
-					<div class='4u' class='center'>
+					<div class='4u 12u(small)' class='center'>
 						<a 
 							href='/paginas/<?= (new controladorUrl())->urlAmigavel('Desenvolvimento Web') ?>'
                             alt='Desenvolvimento Web'
@@ -81,7 +81,7 @@
 						</a>
 					</div>
 
-					<div class='4u' class='center'>
+					<div class='4u 12u(small)' class='center'>
 						<a 
 							href='/paginas/<?= (new controladorUrl())->urlAmigavel('Assistência Técnica') ?>'
                             alt='Assistência Técnica'

@@ -1,3 +1,13 @@
+.telLink
+{
+    color: #ff8400;
+}
+
+.telLink:hover
+{
+    color: #03789b;
+}
+
 .emailsList
 {
     list-style: disc;
@@ -5,7 +15,9 @@
 
 .emailsList li
 {
-    display: block;
+    display:    block;
+    padding:    0px;
+    margin:     0px;
 }
 
 .emailsList li a

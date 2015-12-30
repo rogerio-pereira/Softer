@@ -4,6 +4,8 @@
     text-align: center;
     font-weight: 400;
     text-decoration: none;
+    color: #ff8400;
+    font-size: 1.2em;
 }
 
 .imgHomeLink:hover
@@ -13,7 +15,8 @@
 
 figure.imgHome img
 {
-    max-height: 200px;
+    max-width: 100%;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
 }
