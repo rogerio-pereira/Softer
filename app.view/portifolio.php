@@ -74,7 +74,7 @@
 
                         foreach ($this->collectionPortifolio as $portifolio) 
                         {
-                            $corta = ($cont % 2) == 0 ? '$' : '';
+                            //$corta = ($cont % 2) == 0 ? '$' : '';
                             ?>
                                 <div class='4u 6u<?=$corta?>(medium) 12u(small) portifolioContainer'>
                                     <a 
