@@ -12,6 +12,18 @@
                     Configurações
                 </a>
             </li>
+            <li>
+                <a href='/telefones' title='Telefones' alt='Telefones'>
+                    <i class="fa fa-phone"></i>&nbsp;
+                    Telefones
+                </a>
+            </li>
+            <li>
+                <a href='/telefones' title='E-mails' alt='E-mails'>
+                    <i class="fa fa-envelope"></i>&nbsp;
+                    E-mails
+                </a>
+           </li>
             <?php
                 if($_SESSION['funcoes']->ecommerce == 1)
                 {
@@ -86,6 +98,25 @@
                             Vendas
                         </a>
                     </li>
+                    <?php
+                }
+            ?>
+            <?php
+                if(($_SESSION['funcoes']->catalogo == 1) || ($_SESSION['funcoes']->ecommerce == 1))
+                {
+                    ?>
+                    <li>
+                        <a href='/categoriaProdutos' title='Categoria Produtos' alt='Categoria Produtos'>
+                            <i class="fa fa-list"></i>&nbsp;
+                            Categoria Produtos
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/subcategoriaProdutos' title='Subcategoria Produtos' alt='Subcategoria Produtos'>
+                            <i class="fa fa-list"></i>&nbsp;
+                            Subcategoria Produtos
+                        </a>
+                    </li>
                     <li>
                         <a href='/produtos' title='Produtos' alt='Produtos'>
                             <i class="fa fa-star"></i>&nbsp;
@@ -140,11 +171,20 @@
                 }
             ?>
             <?php
-                /*if  (
-                        ($_SESSION['funcoes']->galeria      == 1)   ||
-                        ($_SESSION['funcoes']->ecommerce    == 1)   ||
-                        ($_SESSION['funcoes']->imobiliaria  == 1)
-                    )
+                if($_SESSION['funcoes']->depoimentos == 1)
+                {
+                    ?>
+                    <li>
+                        <a href='/depoimentos' title='Depoimentos' alt='Depoimentos'>
+                            <i class="fa fa-commenting-o"></i>&nbsp;
+                            Depoimentos
+                        </a>
+                    </li>
+                    <?php
+                }
+            ?>
+            <?php
+                if($_SESSION['funcoes']->galeria == 1)
                 {
                     ?>
                         <li>
@@ -154,7 +194,20 @@
                         </a>
                     </li>
                     <?php
-                }*/
+                }
+            ?>
+            <?php
+                if($_SESSION['funcoes']->catalogoClientes == 1)
+                {
+                    ?>
+                    <li>
+                        <a href='/catalogoClientes' title='Catalogo Clientes' alt='Catalogo Clientes'>
+                            <i class="fa fa-users"></i>&nbsp;
+                            Catalogo Clientes
+                        </a>
+                    </li>
+                    <?php
+                }
             ?>
             <li>
                 <a href='/usuarios' title='Usuários' alt='Usuários'>

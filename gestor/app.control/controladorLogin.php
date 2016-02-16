@@ -3,7 +3,7 @@
       * controladorLogin.php
       * Classe de Controle Login
       *
-      * @author  Rogério Eduardo Pereira <rogerio@rogeriopereira.info>
+      * @author  Rogério Eduardo Pereira <rogerio@groupsofter.com.br>
       * @version 1.0
       * @access  public
       */
@@ -96,7 +96,7 @@
                 ($this->email == $this->userDB->email) &&
                 ($this->senha == $this->userDB->senha)
               )
-                return true;
+                return $this->userDB->ativo;
             else
                 return false;
         }

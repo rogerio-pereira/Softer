@@ -3,7 +3,7 @@
       * produtos.php
       * Classe produtos
       *
-      * @author  Rogério Eduardo Pereira <rogerio@rogeriopereira.info>
+      * @author  Rogério Eduardo Pereira <rogerio@groupsofter.com.br>
       * @version 1.0
       * @access  public
       */
@@ -31,13 +31,13 @@
 
             $this->collection->setTituloPagina('Produtos');
 
-            $this->collection->addColumn('codigo');
-            $this->collection->addColumn('nome');
-            $this->collection->addColumn('valor');
-            $this->collection->addColumn('peso');
-            $this->collection->addColumn('ativo');
+            $this->collection->addColumn('p.codigo');
+            $this->collection->addColumn('p.nome');
+            $this->collection->addColumn('p.valor');
+            $this->collection->addColumn('p.peso');
+            $this->collection->addColumn('p.ativo');
 
-            $this->collection->addEntity('produtos');
+            $this->collection->addEntity('produtos p');
 
             $this->listagem = $this->collection->show();
         }

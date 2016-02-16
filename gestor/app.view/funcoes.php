@@ -3,7 +3,7 @@
       * funcoes.php
       * Classe funcoes
       *
-      * @author  Rogério Eduardo Pereira <rogerio@rogeriopereira.info>
+      * @author  Rogério Eduardo Pereira <rogerio@groupsofter.com.br>
       * @version 1.0
       * @access  public
       */
@@ -115,6 +115,16 @@
                         <div class='2u'>
                             <input 
                                 type='checkbox' 
+                                id='catalogo' 
+                                name='catalogo' 
+                                value='1'
+                                <?= $this->funcoes->catalogo == 1 ? 'checked' : '' ?>
+                            >
+                            <label for='catalogo'>Catálogo Produtos</label>
+                        </div>
+                        <div class='2u'>
+                            <input 
+                                type='checkbox' 
                                 id='ecommerce' 
                                 name='ecommerce' 
                                 value='1'
@@ -141,6 +151,28 @@
                                 <?= $this->funcoes->imobiliaria == 1 ? 'checked' : '' ?>
                             >
                             <label for='imobiliaria'>Imobiliária</label>
+                        </div>
+
+                        <div class='2u'>
+                            <input
+                                type='checkbox'
+                                id='depoimentos'
+                                name='depoimentos'
+                                value='1'
+                                <?= $this->funcoes->depoimentos == 1 ? 'checked' : '' ?>
+                            >
+                            <label for='depoimentos'>Depoimentos</label>
+                        </div>
+
+                        <div class='2u'>
+                            <input
+                                type='checkbox'
+                                id='catalogoClientes'
+                                name='catalogoClientes'
+                                value='1'
+                                <?= $this->funcoes->catalogoClientes == 1 ? 'checked' : '' ?>
+                            >
+                            <label for='catalogoClientes'>Catálogo de Clientes</label>
                         </div>
 
                         <div class='12u'>

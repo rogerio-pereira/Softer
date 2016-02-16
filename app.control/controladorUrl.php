@@ -4,7 +4,7 @@
       * Classe de Controle controladorUrl
       *     1.1 Método corrigeUrlAmigavel
       *
-      * @author  Rogério Eduardo Pereira <rogerio@rogeriopereira.info>
+      * @author  Rogério Eduardo Pereira <rogerio@groupsofter.com.br>
       * @version 1.1
       * @access  public
       */
@@ -96,6 +96,8 @@
         public function corrigeUrlAmigavel($urlAmigavel)
         {
             $string = str_replace('-', ' ', $urlAmigavel);
+            $string = str_replace('_', ' - ', $string);
+
 
             return $string;
         }
