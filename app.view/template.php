@@ -52,7 +52,41 @@
                     <!--JavaScript-->
                 </head>
                 <body>
+                    <header>
+                        <div class="12u">
+                            <div class='row'>
+                                <div class='6u headerLogotipo'>
+                                    <a href='/' alt='Group Softer' title='Group Softer' class='center'>
+                                        <img 
+                                            src='<?= $_SESSION['configuracoes']->logotipo ?>'  
+                                            alt='Group Softer' 
+                                            title='Group Softer'
+                                        >
+                                    </a>
+                                </div>
+
+                                <div class='6u headerRedesSociais table'>
+                                    <div class="middle">
+                                        <?php include_once('redesSociais.php') ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <section>
                         #CONTENT#
+                    </section>
+
+                    <footer>
+                        <div class='row'>
+                            <div class='7u -3u footerMenu'>
+                                <nav class='menuPrincipal center'>
+                                    <?php include_once('menu.php') ?>
+                                </nav>
+                            </div>
+                        </div>
+                    </footer>
                 </body>
             </html>
 
